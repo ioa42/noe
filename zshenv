@@ -1,0 +1,3 @@
+PAGER='most'
+EDITOR='vim'
+
