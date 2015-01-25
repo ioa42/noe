@@ -1,5 +1,11 @@
 [user]
-	email = nbarray@gmail.com
-	name = Nicolas Barray
+  email = nbarray@gmail.com
+  name = Nicolas Barray
 [push]
-	default = simple
+  default = simple
+
+[alias]
+  co = checkout
+  ci = commit
+  lg = log
+  br = branch
