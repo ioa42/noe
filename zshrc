@@ -6,4 +6,9 @@ autoload -U promptinit
 compinit
 promptinit
 
+alias ls='ls --color'
+alias ll='ls --color -l'
+alias la='ls --color -la'
+alias lisa='ls --color -lisah'
+
 PROMPT='%F{green}%n%f at %F{magenta}%m%f in %~ %F{yellow}\_o<%f '
