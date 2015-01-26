@@ -24,6 +24,9 @@ syntax on
 
 colorscheme jellybeans
 
+set ruler
+set number
+
 " }
 
 " Formatting {
