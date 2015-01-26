@@ -5,6 +5,7 @@
   default = simple
 
 [alias]
+  st = status
   co = checkout
   ci = commit
   lg = log
