@@ -19,13 +19,14 @@ call vundle#end()
 " General {
 
 filetype plugin indent on " Load syntax plugins
-
 syntax on
-
 colorscheme jellybeans
 
 set ruler
 set number
+
+" Avoid *.swp files
+set noswapfile
 
 " }
 

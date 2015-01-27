@@ -8,5 +8,7 @@
   st = status
   co = checkout
   ci = commit
-  lg = log
+  lg = log --color --graph --all --pretty=format:'%Cred%h%Creset-%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue)<%an>%Creset' --abbrev-commit
+  d = diff
   br = branch
+  bl = blame
