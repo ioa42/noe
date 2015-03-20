@@ -2,25 +2,50 @@
 "
 " Authors: Nicolas Barray
 
-" Vundle {
+" Preload {
 
 set nocompatible
 filetype off
+
+" }
+
+" Vundle {
+
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
-Bundle 'gmarik/Vundle.vim'
+Plugin 'gmarik/Vundle.vim'
+Plugin 'yurifury/hexHighlight'  " Highlight hex code with its color!
+Plugin 'Valloric/YouCompleteMe' " AST completion engine
+Plugin 'tpope/vim-surround'     " Surrounds mechanics with 's'
+Plugin 'godlygeek/tabular'
 
 call vundle#end()
+
+""" YouCompleteMe {
+
+let mapleader="," " The leader key !
+nnoremap <leader>jd :YcmCompleter GoTo<CR>
+
+" Set the global file if no ycm_extra_conf.py exits in the current file.
+let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/ycm_temp/ycm.conf' 
+
+" STAP asking if the file is safe. Thanks.
+let g:ycm_confirm_extra_conf = 0
+
+""" }
 
 " }
 
 
 " General {
 
-filetype plugin indent on " Load syntax plugins
-syntax on
-colorscheme jellybeans
+" Detect the correct file type foreach plugin, syntax, index, etc.
+filetype plugin indent on
+
+syntax on " Enable syntax
+colorscheme jellybeans " Epic color scheme
+" colorscheme mac_classic
 
 set ruler
 set number
