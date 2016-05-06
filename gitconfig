@@ -12,3 +12,4 @@
   d = diff
   br = branch
   bl = blame
+  pl = pull --rebase

@@ -15,6 +15,5 @@ alias tmux="TERM=screen-256color-bce tmux"
 
 alias kim='ssh root@ns368921.ip-37-59-37.eu'
 
-
 PROMPT='%F{green}%n%f at %F{magenta}%m%f in %~ %F{yellow}\_o<%f '
 RPROMPT="`acpi`"

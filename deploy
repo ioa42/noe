@@ -1,0 +1,31 @@
+#!/usr/bin/env sh
+
+###############
+# Deploy vim. #
+###############
+rm -rf ~/.vim
+rm -rf ~/.vimrc
+
+ln -r -s vim ~/.vim	# Add the jellybeans color schema
+ln -r -s vimrc ~/.vimrc
+
+# Download Vundle (plugin management for vim) and install my plugins.
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+vim +PluginInstall +qall
+
+
+###############
+# Deploy zsh. #
+###############
+rm -rf ~/.zshrc
+rm -rf ~/.zshenv
+
+ln -r -s zshenv ~/.zshenv
+ln -r -s zshrc ~/.zshrc
+
+###############
+# Deploy git. #
+###############
+rm -rf ~/.gitconfig
+
+ln -r -s gitconfig ~/.gitconfig
