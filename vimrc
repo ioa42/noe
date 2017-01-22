@@ -22,6 +22,7 @@ filetype plugin indent on " Load syntax plugins
 syntax on
 colorscheme jellybeans
 
+let &t_Co=256
 set ruler
 set number
 
