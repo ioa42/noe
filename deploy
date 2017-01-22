@@ -29,3 +29,17 @@ ln -r -s zshrc ~/.zshrc
 rm -rf ~/.gitconfig
 
 ln -r -s gitconfig ~/.gitconfig
+
+######################
+# For node on Debian #
+######################
+
+file=$(cat /etc/os-release | grep '^ID=')
+
+if [ "$file" == 'ID=debian' ]
+then
+  echo 'Debian detected: add node to nodejs symlink'
+  ln -s /usr/bin/nodejs /usr/bin/node
+else
+  echo 'Not debian'
+fi
